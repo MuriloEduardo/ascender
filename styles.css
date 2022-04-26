@@ -1,0 +1,90 @@
+nav {
+  transition: 500ms ease;
+}
+
+nav.scrolled {
+  background-color: #212529;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#home {
+  background: url('./img/banner-header.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+#home::after {
+  content: '';
+  position: absolute;
+  background-color: #417ec0;
+  background-image: linear-gradient(
+    to right top,
+    #417ec0,
+    #3974b4,
+    #316aa8,
+    #29609c,
+    #215690,
+    #385293,
+    #4d4d94,
+    #614691,
+    #943b8c,
+    #be2977,
+    #db2356,
+    #e63e2a
+  );
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#home * {
+  z-index: 1;
+}
+
+#trabalhe-conosco {
+  background: url('./img/banner-work-with-us.png');
+  background-size: cover;
+}
+
+.svg-what-we-do {
+  max-width: 100px;
+}
+
+#quem-somos {
+  background-color: #e63e2a;
+}
+
+#quem-somos img {
+  max-height: 700px;
+}
+
+.btn-danger {
+  background-color: #e63e2a;
+}
+
+.btn-danger:hover {
+  background-color: #bb3021;
+}
+
+.form-control:focus {
+  border-color: #e63e2a;
+  box-shadow: 0 0 0 0.2rem rgba(230, 62, 42, 0.25);
+}
+
+#social-media > li > a {
+  color: #e63e2a;
+  transition: 500ms ease;
+}
+
+#social-media > li > a:hover {
+  color: #bb3021;
+}
+
+@media (max-width: 768px) {
+  .vh-sm-auto {
+    height: auto !important;
+  }
+}
